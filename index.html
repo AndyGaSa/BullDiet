@@ -23,6 +23,11 @@
         max-width: 800px;
       }
 
+      .table-container {
+        overflow-x: auto;
+        width: 100%;
+      }
+
       th,
       td {
         border: 1px solid #dddddd;
@@ -81,55 +86,59 @@
   <body>
     <div class="container">
       <h2>Plan de Dieta</h2>
-      <table>
-        <tr>
-          <th>Comida</th>
-          <th>Opción Principal</th>
-          <th>Alternativa 1</th>
-          <th>Alternativa 2</th>
-        </tr>
-        <tr>
-          <td>Desayuno y Almuerzo</td>
-          <td>Tostada integral (60g) con 70g de jamón. 2 huevos revueltos.</td>
-          <td>Bol de yogur (200g) con nueces (15g) y frutas (manzana).</td>
-          <td>
-            2 tortas de arroz con 50g de jamón/fuet. Tortilla francesa (2
-            huevos).
-          </td>
-        </tr>
-        <tr>
-          <td>Comida</td>
-          <td>
-            200g pasta integral (arroz/macarrones) con 150g atún y zanahoria.
-          </td>
-          <td>Judía verde con patatas (150g/100g) y 150g pollo/lomo.</td>
-          <td>
-            200g caldo de pollo con fideos integrales (40g) y 150g pollo
-            desmenuzado.
-          </td>
-        </tr>
-        <tr>
-          <td>Merienda</td>
-          <td>
-            YoPRO de Danone de fresa/yogur griego con manzana/frutos secos
-            (15g).
-          </td>
-          <td>2 rebanadas pan integral con 50g pavo y queso fresco.</td>
-          <td>Tarta de manzana y avena (casera).</td>
-        </tr>
-        <tr>
-          <td>Cena</td>
-          <td>200g salmón a la plancha con 150g patatas al vapor/asadas.</td>
-          <td>2 huevos a la plancha con 100g judía verde y 100g patatas.</td>
-          <td>150g lomo/pechuga de pollo con espárragos verdes.</td>
-        </tr>
-        <tr>
-          <td>Snacks</td>
-          <td>Zanahorias baby/pepinos cortados.</td>
-          <td>Frutas frescas (manzana, pera, kiwi).</td>
-          <td>Puñado frutos secos (15g) o Yogur griego/proteínas.</td>
-        </tr>
-      </table>
+      <div class="table-container">
+        <table>
+          <tr>
+            <th>Comida</th>
+            <th>Opción Principal</th>
+            <th>Alternativa 1</th>
+            <th>Alternativa 2</th>
+          </tr>
+          <tr>
+            <td>Desayuno y Almuerzo</td>
+            <td>
+              Tostada integral (60g) con 70g de jamón. 2 huevos revueltos.
+            </td>
+            <td>Bol de yogur (200g) con nueces (15g) y frutas (manzana).</td>
+            <td>
+              2 tortas de arroz con 50g de jamón/fuet. Tortilla francesa (2
+              huevos).
+            </td>
+          </tr>
+          <tr>
+            <td>Comida</td>
+            <td>
+              200g pasta integral (arroz/macarrones) con 150g atún y zanahoria.
+            </td>
+            <td>Judía verde con patatas (150g/100g) y 150g pollo/lomo.</td>
+            <td>
+              200g caldo de pollo con fideos integrales (40g) y 150g pollo
+              desmenuzado.
+            </td>
+          </tr>
+          <tr>
+            <td>Merienda</td>
+            <td>
+              YoPRO de Danone de fresa/yogur griego con manzana/frutos secos
+              (15g).
+            </td>
+            <td>2 rebanadas pan integral con 50g pavo y queso fresco.</td>
+            <td>Tarta de manzana y avena (casera).</td>
+          </tr>
+          <tr>
+            <td>Cena</td>
+            <td>200g salmón a la plancha con 150g patatas al vapor/asadas.</td>
+            <td>2 huevos a la plancha con 100g judía verde y 100g patatas.</td>
+            <td>150g lomo/pechuga de pollo con espárragos verdes.</td>
+          </tr>
+          <tr>
+            <td>Snacks</td>
+            <td>Zanahorias baby/pepinos cortados.</td>
+            <td>Frutas frescas (manzana, pera, kiwi).</td>
+            <td>Puñado frutos secos (15g) o Yogur griego/proteínas.</td>
+          </tr>
+        </table>
+      </div>
       <div class="counter-container">
         <span>Días cumplidos: </span><span id="daysCounter">0</span>
         <button onclick="incrementCounter()">Día cumplido</button>
